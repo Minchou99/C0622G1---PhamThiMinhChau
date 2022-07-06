@@ -41,11 +41,11 @@
         let result;
         if (select1 === 'VND' && select2 === 'VND')
             result = giatrinhapvao + 'Đ';
-            else if (select1 === 'USD' && select2 === 'VND')
+        else if (select1 === 'USD' && select2 === 'VND')
             result = giatrinhapvao * 23000 + 'Đ'
-             else if (select1 === 'VND' && select1 === 'VND')
+        else if (select1 === 'VND' && select1 === 'VND')
             result = giatrinhapvao / 23000 + '$';
-            else if (select1 === 'USD' && select2 === 'USD')
+        else if (select1 === 'USD' && select2 === 'USD')
             result = giatrinhapvao + '$';
         document.getElementById("result").innerText = result;
     }
