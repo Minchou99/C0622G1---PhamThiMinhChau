@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung_dung_chuyen_doi_tien_te</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="text" id="nhapvao"></td>
+        <td>
+            <select id="select1">
+                <option value="VND">VNĐ</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="select2">
+                <option value="VND">VNĐ</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="doitiente()">Convert</button>
+        </td>
+    </tr>
+</table>
+<br>
+<p id="result"></p>
+<script>
+    function doitiente() {
+        let giatrinhapvao = document.getElementById('nhapvao').value;
+        let select1 = document.getElementById('select1').value;
+        let select2 = document.getElementById('select2').value;
+        let result;
+        if (select1 === 'VND' && select2 === 'VND')
+            result = giatrinhapvao + 'Đ';
+            else if (select1 === 'USD' && select2 === 'VND')
+            result = giatrinhapvao * 23000 + 'Đ'
+             else if (select1 === 'VND' && select1 === 'VND')
+            result = giatrinhapvao / 23000 + '$';
+            else if (select1 === 'USD' && select2 === 'USD')
+            result = giatrinhapvao + '$';
+        document.getElementById("result").innerText = result;
+    }
+</script>
+</body>
+</html>

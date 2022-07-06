@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung_dung_may_tinh</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="number" id="nhap1" placeholder="Giá trị 1"></td>
+        <td><input type="number" id="nhap2" placeholder="Giá trị 2"></td>
+    </tr>
+    <tr>
+        <td>
+            <button id="add" onclick="add()">Addition(+)</button>
+            <button id="sub" onclick="sub()">Subtraction(-)</button>
+        </td>
+        <td>
+            <button id="mul" onclick="mul()">Multiplication(X)</button>
+            <button id="divi" onclick="div()">Division(/)</button>
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<table>
+    <tr>
+        <td><b>RESULT:</b></td>
+        <td id="result"></td>
+    </tr>
+</table>
+<script>
+    function add() {
+        let nhapvao1 = document.getElementById("nhap1").value;
+        let nhapvao2 = document.getElementById('nhap2').value;
+        let result;
+        result = nhapvao1 + nhapvao2;
+        document.getElementById('result').innerText = result;
+    }
+
+    function sub() {
+        let nhapvao1 = document.getElementById('nhap1').value;
+        let nhapvao2 = document.getElementById('nhap2').value;
+        let result;
+        result = nhapvao1 - nhapvao2;
+        document.getElementById('result').innerText = result
+    }
+
+    function mul() {
+        let nhapvao1 = document.getElementById('nhap1').value;
+        let nhapvao2 = document.getElementById('nhap2').value;
+        let result;
+        result = nhapvao1 * nhapvao2;
+        document.getElementById('result').innerText = result
+    }
+
+    function div() {
+        let nhapvao1 = document.getElementById('nhap1').value;
+        let nhapvao2 = document.getElementById('nhap2').value;
+        let result;
+        result = nhapvao1 / nhapvao2;
+        document.getElementById('result').innerText = result
+    }
+</script>
+</body>
+</html>
