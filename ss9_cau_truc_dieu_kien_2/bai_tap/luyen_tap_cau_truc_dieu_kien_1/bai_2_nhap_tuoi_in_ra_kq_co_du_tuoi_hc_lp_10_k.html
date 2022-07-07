@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_2</title>
+</head>
+<body>
+<h1>Tuổi của bạn có đủ điều kiện vào học lớp 10 không?</h1>
+<input type="text" id="addAge">
+<button onclick="checkResult()">Kiểm tra</button>
+<br>
+<p id="result"></p>
+<script>
+    function checkResult() {
+        let age = document.getElementById("addAge").value;
+        if (age >= 15{
+            document.getElementById("result").innerText = ("Bạn đủ điều kiện học lớp 10");
+        } else {
+            document.getElementById("result").innerText = ("Bạn không đủ điều kiện học lớp 10");
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dien_tich_hinh_chu_nhat</title>
+</head>
+<body>
+<script>
+    let lenght = prompt('Nhập chiều dài');
+    let width = prompt('Nhập chiều rộng');
+    let stretch = lenght * width;
+    if (isNaN(lenght) === false && isNaN(width) === false) {
+        alert(stretch);
+    } else if (isNaN(lenght) === false && isNaN(width) === true) {
+        alert('Không thực hiện được');
+    } else if (isNaN(lenght) === true && isNaN(width) === false) {
+        alert('Không thực hiện được');
+    } else {
+        alert('Không thực hiện được');
+    }
+</script>
+</body>
+</html>
