@@ -7,8 +7,8 @@
 <body>
 <script>
     alert('Phương trình bậc nhất một ẩn có dạng ax+b=0');
-    let inputFirstNumber = prompt('Nhập a');
-    let inputSecondNumber = prompt('Nhập b');
+    let inputFirstNumber = parseFloat(prompt('Nhập a'));
+    let inputSecondNumber = parseFloat(prompt('Nhập b'));
     let result = -inputSecondNumber / inputFirstNumber;
     if (isNaN(inputFirstNumber) === false && isNaN(inputSecondNumber) === false) {
         if (inputFirstNumber > 0) {

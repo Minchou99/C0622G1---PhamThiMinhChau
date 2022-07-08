@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    let meter = prompt('Nhập mét');
+    let meter = parseFloat(prompt('Nhập mét'));
     let feet = meter / 3.2808;
     if (isNaN(meter) === false) {
         if (meter >= 0) {

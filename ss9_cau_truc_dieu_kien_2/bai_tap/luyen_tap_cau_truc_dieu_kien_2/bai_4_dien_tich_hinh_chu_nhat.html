@@ -6,8 +6,8 @@
 </head>
 <body>
 <script>
-    let lenght = prompt('Nhập chiều dài');
-    let width = prompt('Nhập chiều rộng');
+    let lenght = parseFloat(prompt('Nhập chiều dài'));
+    let width = parseFloat(prompt('Nhập chiều dài'));
     let stretch = lenght * width;
     if (isNaN(lenght) === false && isNaN(width) === false) {
         alert(stretch);

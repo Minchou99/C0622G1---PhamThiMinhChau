@@ -6,8 +6,8 @@
 </head>
 <body>
 <script>
-    let lenght = prompt('Cạnh góc vuông thứ nhất');
-    let width = prompt('Cạnh góc vuông thứ hai');
+    let lenght = parseFloat(prompt('Cạnh góc vuông thứ nhất'));
+    let width = parseFloat(prompt('Cạnh góc vuông thứ hai'));
     let stretch = (lenght * width) / 2;
     if (isNaN(lenght) === false && isNaN(width) === false) {
         alert(stretch);
