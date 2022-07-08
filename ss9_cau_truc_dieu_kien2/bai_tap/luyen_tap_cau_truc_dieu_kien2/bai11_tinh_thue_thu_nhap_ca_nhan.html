@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thue_thu_nhap_ca_nhan</title>
+</head>
+<body>
+<script>
+    let tongThuNhapCaNhan = parseFloat(prompt('Nhập thu cập cá nhân'));
+    if (isNaN(tongThuNhapCaNhan) === false) {
+        if (tongThuNhapCaNhan < 10000000) {
+            alert('Thuế phải nộp là: ' + tongThuNhapCaNhan * 0.01 + 'VNĐ');
+        } else if (tongThuNhapCaNhan < 50000000) {
+            alert('Thuế phải nộp là: ' + tongThuNhapCaNhan * 0.02 + 'VNĐ');
+        } else if (tongThuNhapCaNhan < 80000000) {
+            alert('Thuế phải nộp là: ' + tongThuNhapCaNhan * 0.03 + 'VNĐ');
+        } else {
+            alert('Thuế phải nộp là: ' + tongThuNhapCaNhan * 0.04 + 'VNĐ');
+        }
+    } else {
+        alert('Không thực hiện được');
+    }
+</script>
+</body>
+</html>

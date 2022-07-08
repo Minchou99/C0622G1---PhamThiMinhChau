@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh_so_tien_dien</title>
+</head>
+<body>
+<script>
+    let numberElec = parseFloat(prompt('Nhập chữ điện đã dùng'));
+    let bac1 = 1.678;
+    let bac2 = 1.734;
+    let bac3 = 2.014;
+    let bac4 = 2.536;
+    let bac5 = 2.834;
+    let bac6 = 2.927;
+    let prBac1 = numberElec * bac1;
+    let prBac2 = 50 * bac1 + (numberElec - 50) * bac2;
+    let prBac3 = 50 * bac1 + 100 * bac2 + (numberElec - 150) * bac3;
+    let prBac4 = 50 * bac1 + 100 * bac2 + 200 * bac3 + (numberElec - 350) * bac4;
+    let prBac5 = 50 * bac1 + 100 * bac2 + 200 * bac3 + 300 * bac4 + (numberElec - 650) * bac5;
+    let prBac6 = 50 * bac1 + 100 * bac2 + 200 * bac3 + 300 * bac4 + 400 * bac5 + (numberElec - 1050) * bac6;
+    if (isNaN(numberElec) === false) {
+        if (numberElec > 0) {
+            if (numberElec <= 50) {
+                alert(prBac1 + prBac1 * 0.01);
+            } else if (numberElec > 50 && numberElec < 100) {
+                alert(prBac2 + prBac2 * 0.01);
+            } else if (numberElec > 100 && numberElec < 200) {
+                alert(prBac3 + prBac3 * 0.01);
+            } else if (numberElec > 200 && numberElec < 300) {
+                alert(prBac4 + prBac4 * 0.01);
+            } else if (numberElec > 300 && numberElec < 400) {
+                alert(prBac5 + prBac5 * 0.01);
+            } else {
+                alert(prBac6 + prBac6 * 0.01);
+            }
+        } else {
+            alert('Không thực hiện được');
+        }
+    } else {
+        alert('Không thực hiện được');
+    }
+</script>
+</body>
+</html>
