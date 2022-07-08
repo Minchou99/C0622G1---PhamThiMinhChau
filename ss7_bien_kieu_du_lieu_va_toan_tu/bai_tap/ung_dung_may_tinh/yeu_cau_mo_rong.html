@@ -13,7 +13,7 @@
         <td><input type="button" value="(" onclick="display('(')"></td>
         <td><input type="button" value=")" onclick="display(')')"></td>
         <td><input type="button" value="%" onclick="display('%')"></td>
-        <td><input type="button" value="AC" onclick="clearresult()"></td>
+        <td><input type="button" value="AC" onclick="clearResult()"></td>
     </tr>
     <tr>
         <td><input type="button" value="7" onclick="display('7')"></td>
@@ -42,7 +42,7 @@
 </table>
 </body>
 <script>
-    function clearresult() {
+    function clearResult() {
         document.getElementById("result").value = " ";
     }
 
@@ -51,9 +51,9 @@
     }
 
     function calculate() {
-        let valuedisplay = document.getElementById("result").value;
-        let resultdisplay = eval(valuedisplay);
-        document.getElementById("result").value = resultdisplay;
+        let valueDisplay = document.getElementById("result").value;
+        let valueResult = eval(valueDisplay);
+        document.getElementById("result").value = valueResult;
     }
 
     //eval() hiểu được giá trị dạng chuỗi sang biểu thức và sẽ tính toán ra được kq nếu ghi đúng thứ tự

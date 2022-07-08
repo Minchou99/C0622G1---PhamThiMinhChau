@@ -13,7 +13,7 @@
         <th></th>
     </tr>
     <tr>
-        <td><input type="text" id="nhapvao"></td>
+        <td><input type="text" id="nhap"></td>
         <td>
             <select id="select1">
                 <option value="VND">VNĐ</option>
@@ -27,27 +27,27 @@
             </select>
         </td>
         <td>
-            <button onclick="doitiente()">Convert</button>
+            <button onclick="doiTienTe()">Convert</button>
         </td>
     </tr>
 </table>
 <br>
 <p id="result"></p>
 <script>
-    function doitiente() {
-        let giatrinhapvao = document.getElementById('nhapvao').value;
+    function doiTienTe() {
+        let giaTriNhapVao = document.getElementById('nhap').value;
         let select1 = document.getElementById('select1').value;
         let select2 = document.getElementById('select2').value;
         let result;
         if (select1 === 'VND' && select2 === 'VND') {
-            result = giatrinhapvao + 'Đ';
+            result = giaTriNhapVao + 'Đ';
         }
         else if (select1 === 'USD' && select2 === 'VND'){
-            result = giatrinhapvao * 23000 + 'Đ'; }
+            result = giaTriNhapVao * 23000 + 'Đ'; }
         else if (select1 === 'VND' && select1 === 'VND'){
-            result = giatrinhapvao / 23000 + '$';}
-        else if (select1 === 'USD' && select2 === 'USD') {
-            result = giatrinhapvao + '$';
+            result = giaTriNhapVao / 23000 + '$';}
+        else {
+            result = giaTriNhapVao + '$';
         }
         document.getElementById("result").innerText = result;
     }

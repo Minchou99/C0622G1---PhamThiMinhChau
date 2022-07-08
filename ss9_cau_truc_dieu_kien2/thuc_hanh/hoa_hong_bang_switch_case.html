@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh_hoa_hong_bang_switch_case</title>
+</head>
+<body>
+<script>
+    let Tien = prompt("Nhap tien thu nhap")
+    let Hoahong
+    switch(true){
+        case Tien < 1000000:
+            Hoahong = 2.5/100*Tien;
+            alert(Hoahong);
+            break;
+        case Tien < 2000000:
+            Hoahong = 5/100*Tien;
+            alert(Hoahong);
+            break;
+        default:
+            Hoahong = 7/100*Tien;
+            alert(Hoahong);
+            break;
+    }
+</script>
+</body>
+</html>
