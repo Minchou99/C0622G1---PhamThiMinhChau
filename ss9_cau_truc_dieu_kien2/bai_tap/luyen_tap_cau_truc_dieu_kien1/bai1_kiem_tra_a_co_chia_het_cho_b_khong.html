@@ -19,7 +19,7 @@
     function checkResult() {
         let firstNumber = document.getElementById("importFirstNumber").value;
         let secondNumber = document.getElementById("importSecondNumber").value;
-        if (firstNumber % secondNumber == '0') {
+        if (firstNumber % secondNumber ===0) {
             document.getElementById("result").innerText = ("a chia hết cho b");
         } else {
             document.getElementById("result").innerText = ("a không chia hết cho b");

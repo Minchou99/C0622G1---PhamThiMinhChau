@@ -7,7 +7,7 @@
 <body>
 <script>
     let inputAge = +prompt('Nhập số tuổi');
-    if (isNaN(inputAge) === false) {
+    if (!isNaN(inputAge)) {
         if (inputAge > 0 && inputAge < 120) {
             alert(inputAge + ' là số tuổi của một người ');
         } else {

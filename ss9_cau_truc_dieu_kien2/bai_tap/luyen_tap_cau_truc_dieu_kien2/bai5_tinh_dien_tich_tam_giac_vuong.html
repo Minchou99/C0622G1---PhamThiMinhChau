@@ -9,7 +9,7 @@
     let lenght = parseFloat(prompt('Cạnh góc vuông thứ nhất'));
     let width = parseFloat(prompt('Cạnh góc vuông thứ hai'));
     let stretch = (lenght * width) / 2;
-    if (isNaN(lenght) === false && isNaN(width) === false) {
+    if ((!isNaN(lenght) && isNaN(width))) {
         alert(stretch);
     } else {
         alert('Không thực hiện được');

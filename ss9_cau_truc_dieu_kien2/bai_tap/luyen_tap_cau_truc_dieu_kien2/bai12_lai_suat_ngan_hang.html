@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lai_suat_ngan_hang</title>
+</head>
+<body>
+<script>
+    let tienVay = parseFloat(prompt(' Nhập số tiền bạn gửi vào đây (triệu đồng) ' + 'Lãi suất hàng tháng là 5%'));
+    let thangVay = prompt('Số tháng vay');
+    for (i = 0; i < thangVay; i++) {
+        tienVay += tienVay * 0.05;
+    }
+    alert('Số tiền bạn phải trả sau ' + thangVay + ' tháng là ' + tienVay.toFixed(3) + ' triệu đồng ');
+    // tienVay.toFixed(3): làm tròn đến số thập phân thứ 3
+</script>
+</body>
+</html>

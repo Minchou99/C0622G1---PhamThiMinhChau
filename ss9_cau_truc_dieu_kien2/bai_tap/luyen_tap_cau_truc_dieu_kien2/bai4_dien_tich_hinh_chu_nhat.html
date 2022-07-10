@@ -8,13 +8,9 @@
 <script>
     let lenght = parseFloat(prompt('Nhập chiều dài'));
     let width = parseFloat(prompt('Nhập chiều dài'));
-    let stretch = lenght * width;
-    if (isNaN(lenght) === false && isNaN(width) === false) {
+    let stretch = (lenght * width).toFixed(3);
+    if (!(isNaN(lenght) && isNaN(width))) {
         alert(stretch);
-    } else if (isNaN(lenght) === false && isNaN(width) === true) {
-        alert('Không thực hiện được');
-    } else if (isNaN(lenght) === true && isNaN(width) === false) {
-        alert('Không thực hiện được');
     } else {
         alert('Không thực hiện được');
     }

@@ -6,14 +6,17 @@
 </head>
 <body>
 <script>
-    let callTime=+prompt("Nhập thời gian gọi (phút)");
-    let price= 15000;
-    let postage=callTime * price;
-    if (callTime <= 60){
-        alert(postage);
-    }
-    else {
-        alert( postage + postage*0.02);
+    let callTime = parseFloat(prompt("Nhập thời gian gọi (phút)"));
+    let price = 15000;
+    let postage = callTime * price;
+    if (!(isNaN(callTime))) {
+        if (callTime <= 60) {
+            alert(postage);
+        } else {
+            alert(postage + postage * 0.02);
+        }
+    } else {
+        alert("Không thực hiện được ");
     }
 </script>
 </body>

@@ -6,27 +6,33 @@
 </head>
 <body>
 <script>
-    let inputFirstNumber = parseFloat(prompt('Nhập số'));
-    let inputSecondNumber = parseFloat(prompt('Nhập số'));
-    let inputThirdNumber = parseFloat(prompt('Nhập số'));
+    let inputFirstNumber = parseFloat(prompt('Nhập số a '));
+    let inputSecondNumber = parseFloat(prompt('Nhập số b '));
+    let inputThirdNumber = parseFloat(prompt('Nhập số c '));
     let denta = inputSecondNumber * inputSecondNumber - 4 * inputFirstNumber * inputThirdNumber;
-    let result1 = -inputSecondNumber / (2 * inputFirstNumber);
-    let canDenta = math.sqrt(denta);
-    let result2 = (-inputSecondNumber + canDenta) / 2 * inputFirstNumber;
-    let result3 = (-inputSecondNumber - canDenta) / 2 * inputFirstNumber;
-    if (isNaN(inputFirstNumber) === false && isNaN(inputSecondNumber) === false && isNaN(inputThirdNumber) === false) {
-        if (inputFirstNumber === 0) {
+    let result1 = (-inputSecondNumber / (2 * inputFirstNumber)).toFixed(3);
+    let canDenta = Math.sqrt(denta);
+    let result2 = ((-inputSecondNumber + canDenta) / (2 * inputFirstNumber)).toFixed(3);
+    let result3 = ((-inputSecondNumber - canDenta) / (2 * inputFirstNumber)).toFixed(3);
+    if (!(isNaN(inputFirstNumber) && isNaN(inputSecondNumber) && isNaN(inputThirdNumber))) {
+        if (inputFirstNumber === 0 && inputSecondNumber === 0 && inputThirdNumber === 0) {
             alert('Không thực hiện được');
         } else {
-            if (denta === 0) {
-                alert(result1);
-            } else if (denta > 0) {
-                alert('Nghiệm 1: ' + result2 + ';' + 'Nghiệm 2: ' + result3);
+            if (inputFirstNumber === 0) {
+                alert("Nghiệm của phương trình là " + (-inputThirdNumber / inputSecondNumber));
             } else {
-                alert('Phương trình vô nghiệm');
+                if (denta === 0) {
+                    alert("Nghiệm kép " + result1);
+                } else {
+                    if (denta > 0) {
+                        alert('Nghiệm 1: ' + result2 + ' ; ' + 'Nghiệm 2: ' + result3);
+                    } else {
+                        alert('Phương trình vô nghiệm');
+                    }
+                }
             }
         }
-    } else{
+    } else {
         alert('Không thực hiện được');
     }
 </script>

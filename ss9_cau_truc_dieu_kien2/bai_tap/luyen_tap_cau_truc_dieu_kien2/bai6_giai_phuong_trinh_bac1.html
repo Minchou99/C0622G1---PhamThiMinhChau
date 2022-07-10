@@ -10,7 +10,7 @@
     let inputFirstNumber = parseFloat(prompt('Nhập a'));
     let inputSecondNumber = parseFloat(prompt('Nhập b'));
     let result = -inputSecondNumber / inputFirstNumber;
-    if (isNaN(inputFirstNumber) === false && isNaN(inputSecondNumber) === false) {
+    if (!(isNaN(inputFirstNumber) && isNaN(inputSecondNumber))) {
         if (inputFirstNumber > 0) {
             alert(result);
         } else if (inputFirstNumber < 0) {

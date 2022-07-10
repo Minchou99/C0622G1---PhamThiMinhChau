@@ -8,7 +8,7 @@
 <script>
     let meter = parseFloat(prompt('Nhập mét'));
     let feet = meter / 3.2808;
-    if (isNaN(meter) === false) {
+    if (!isNaN(meter)) {
         if (meter >= 0) {
             alert(feet);
         } else {

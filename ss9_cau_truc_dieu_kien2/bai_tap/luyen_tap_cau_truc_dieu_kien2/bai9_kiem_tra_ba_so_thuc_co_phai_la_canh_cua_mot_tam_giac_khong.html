@@ -12,7 +12,7 @@
     let input1 = inputFirstEdge + inputSecondEdge;
     let input2 = inputFirstEdge + inputThirdEdge;
     let input3 = inputSecondEdge + inputThirdEdge;
-    if (isNaN(inputFirstEdge) === false && isNaN(inputSecondEdge) === false && isNaN(inputThirdEdge) === false) {
+    if (!(isNaN(inputFirstEdge) && isNaN(inputSecondEdge) && isNaN(inputThirdEdge))){
         if (inputFirstEdge > 0 && inputSecondEdge > 0 && inputThirdEdge > 0) {
             if (input1 > inputThirdEdge) {
                 alert(" Ba số nhập vào là ba cạnh của tam giác ");

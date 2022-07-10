@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="10328feb-ab37-4ab3-a578-c6c28f49ae09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../bai_thuyet_trinh_tiktok/C0622G1_phamthiminhchau_tiktok.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss10_cau_truc_lap_1/thuc_hanh/su_dung_vong_lap_for.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_git_html/thuc_hanh/tao_form_co_ban.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss5_html_form_table/thuc_hanh/tao_bang_co_ban/tao_bang_co_ban.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_html_form_table/thuc_hanh/tao_bang_co_ban/tao_bang_co_ban.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss5_html_form_table/thuc_hanh/tao_bang_nang_cao/tao_bang_nang_cao.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_html_form_table/thuc_hanh/tao_bang_nang_cao/tao_bang_nang_cao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss5_html_form_table/thuc_hanh/tao_form_co_ban/tao_bang_co_ban.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss5_html_form_table/thuc_hanh/tao_mot_form_tim_kiem_google/tao_mot_form_tim_kiem_google.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_html_form_table/thuc_hanh/tao_mot_form_tim_kiem_google/tao_mot_form_tim_kiem_google.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss7_bien_kieu_du_lieu_va_toan_tu/bai_tap/bien_kieu_du_lieu_va_toan_tu/chuyen_doi_nhiet_do.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_bien_kieu_du_lieu_va_toan_tu/bai_tap/bien_kieu_du_lieu_va_toan_tu/chuyen_doi_nhiet_do.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss7_bien_kieu_du_lieu_va_toan_tu/bai_tap/bien_kieu_du_lieu_va_toan_tu/nhap_diem_sinh_vien.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_bien_kieu_du_lieu_va_toan_tu/bai_tap/bien_kieu_du_lieu_va_toan_tu/nhap_diem_sinh_vien.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss7_bien_kieu_du_lieu_va_toan_tu/bai_tap/ung_dung_chuyen_doi_tien_te/ung_dung_chuyen_doi_tien_te.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_bien_kieu_du_lieu_va_toan_tu/bai_tap/ung_dung_chuyen_doi_tien_te/ung_dung_chuyen_doi_tien_te.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss7_bien_kieu_du_lieu_va_toan_tu/bai_tap/ung_dung_may_tinh/ung_dung_may_tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_bien_kieu_du_lieu_va_toan_tu/bai_tap/ung_dung_may_tinh/ung_dung_may_tinh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss7_bien_kieu_du_lieu_va_toan_tu/bai_tap/ung_dung_may_tinh/yeu_cau_mo_rong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_bien_kieu_du_lieu_va_toan_tu/bai_tap/ung_dung_may_tinh/yeu_cau_mo_rong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss7_bien_kieu_du_lieu_va_toan_tu/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuc_hanh/kiem_tra_nam_nhuan.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/.idea/bai_tap.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/do_you_love__me/do_you_love_me.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/game_puzzle/game_puzzle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/kiem_tra_so_ngay_trong_thang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/.idea/luyen_tap_cau_truc_dieu_kien_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/bai_1_kiem_tra_a_co_chia_het_cho_b_khong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/bai_2_nhap_tuoi_in_ra_kq_co_du_tuoi_hc_lp_10_k.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/bai_3_so_nhap_vao_lon_hon_hay_nho_hon_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/bai_4_tim_gia_tri_lon_nhat_trong_3_so.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/bai_5_xep_hang_hoc_luc_cua_hoc_sinh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/bai_6_hoa_hong_nhan_duoc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_1/bai_7_cuoc_dien_thoai_cho_ho_gia_dinh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/.idea/luyen_tap_cau_truc_dieu_kien_2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai_10_so_tien_dien.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai_11_tinh_thue_thu_nhap_ca_nhan.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai_1_chuyen_tu_do_c_sang_do_f.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai_2_chuyen_tu_met_sang_feet.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai_3_tinh_dien_tich_hinh_vuong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai_4_dien_tich_hinh_chu_nhat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai_5_tinh_dien_tich_tam_giac_vuong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai_6_giai_phuong_trinh_bac_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai_7_giai_phuong_trinh_bac_hai.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai_8_kiem_tra_so_tuoi_nhap_vao.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai_9_kiem_tra_3_so_thuc_co_phai_la_canh_cua_mot_tam_giac_khong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/may_tinh_don_gian.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/bai_tap/tinh_chi_so_can_nang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/thuc_hanh/hoa_hong_bang_switch_case.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/thuc_hanh/luyen_tap_su_dung_ban_phim.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien_2/thuc_hanh/su_kien_nhap_chuot.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai12_lai_suat_ngan_hang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien1/bai1_kiem_tra_a_co_chia_het_cho_b_khong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien1/bai1_kiem_tra_a_co_chia_het_cho_b_khong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien1/bai4_tim_gia_tri_lon_nhat_trong_ba_so.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien1/bai4_tim_gia_tri_lon_nhat_trong_ba_so.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien1/bai6_hoa_hong_nhan_duoc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien1/bai6_hoa_hong_nhan_duoc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien1/bai7_cuoc_dien_thoai_cho_ho_gia_dinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien1/bai7_cuoc_dien_thoai_cho_ho_gia_dinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai10_so_tien_dien.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai10_so_tien_dien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai11_tinh_thue_thu_nhap_ca_nhan.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai11_tinh_thue_thu_nhap_ca_nhan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai2_chuyen_tu_met_sang_feet.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai2_chuyen_tu_met_sang_feet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai4_dien_tich_hinh_chu_nhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai4_dien_tich_hinh_chu_nhat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai5_tinh_dien_tich_tam_giac_vuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai5_tinh_dien_tich_tam_giac_vuong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai6_giai_phuong_trinh_bac1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai6_giai_phuong_trinh_bac1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai7_giai_phuong_trinh_bac2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai7_giai_phuong_trinh_bac2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai8_kiem_tra_so_tuoi_nhap_vao.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai8_kiem_tra_so_tuoi_nhap_vao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai9_kiem_tra_ba_so_thuc_co_phai_la_canh_cua_mot_tam_giac_khong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai9_kiem_tra_ba_so_thuc_co_phai_la_canh_cua_mot_tam_giac_khong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tai_lieu/audit/Câu hỏi audit module 1-BP2.0.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../tai_lieu/audit/Câu hỏi audit module 1-BP2.0.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="2Bedh3LOdPR7evZcgawVFt9HEfm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai9_kiem_tra_ba_so_thuc_co_phai_la_canh_cua_mot_tam_giac_khong.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ss9_cau_truc_dieu_kien2/bai_tap/luyen_tap_cau_truc_dieu_kien2/bai8_kiem_tra_so_tuoi_nhap_vao.html" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="JavascriptDebugType" nameIsGenerated="true">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -90,16 +90,36 @@
       <updated>1657270599566</updated>
       <workItem from="1657270600804" duration="138000" />
       <workItem from="1657270741914" duration="1505000" />
+      <workItem from="1657425683750" duration="5989000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1657272062167">
+    <state x="455" y="100" key="#Unnamed" timestamp="1657429344799">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1657272062167" />
+    <state x="455" y="100" key="#Unnamed/0.0.1366.728@0.0.1366.728" timestamp="1657429344799" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1657429334515">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1657429334515" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1657430204869">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1657430204869" />
   </component>
 </project>

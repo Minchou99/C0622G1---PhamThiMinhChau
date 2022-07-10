@@ -19,7 +19,7 @@
     let prBac4 = 50 * bac1 + 100 * bac2 + 200 * bac3 + (numberElec - 350) * bac4;
     let prBac5 = 50 * bac1 + 100 * bac2 + 200 * bac3 + 300 * bac4 + (numberElec - 650) * bac5;
     let prBac6 = 50 * bac1 + 100 * bac2 + 200 * bac3 + 300 * bac4 + 400 * bac5 + (numberElec - 1050) * bac6;
-    if (isNaN(numberElec) === false) {
+    if (!isNaN(numberElec)) {
         if (numberElec > 0) {
             if (numberElec <= 50) {
                 alert(prBac1 + prBac1 * 0.01);

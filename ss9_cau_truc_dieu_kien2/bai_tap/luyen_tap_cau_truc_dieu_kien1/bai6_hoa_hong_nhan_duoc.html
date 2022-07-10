@@ -7,12 +7,16 @@
 <body>
 <script>
     let doanhThu = +prompt('Nhập doanh thu bán hàng ');
-    if (doanhThu > 80000000) {
-        alert(doanhThu * 0.03);
-    } else if (doanhThu > 60000000) {
-        alert(doanhThu * 0.02);
+    if (!(isNaN(doanhThu))) {
+        if (doanhThu > 80000000) {
+            alert(doanhThu * 0.03);
+        } else if (doanhThu > 60000000) {
+            alert(doanhThu * 0.02);
+        } else {
+            alert(doanhThu * 0.01);
+        }
     } else {
-        alert(doanhThu * 0.01);
+        alert('Không thực hiện được');
     }
 </script>
 </body>
