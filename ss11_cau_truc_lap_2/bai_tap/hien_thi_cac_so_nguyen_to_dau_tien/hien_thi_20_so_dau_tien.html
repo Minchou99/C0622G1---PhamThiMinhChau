@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hien_thi_20_so_nguyen_to_dau_tien</title>
+</head>
+<body>
+<!--hiển thị 20 số nguyên tố đầu tiên. -->
+<script>
+    let isPrime = 0;
+    let num = 1;
+    let i = 2;
+    while(num <= 20){
+        isPrime = 1;
+        for (let j = 2; j < i; j++) {
+            if ((i % j == 0) && i != 2){
+                isPrime = 0;
+            }
+        }
+        if (isPrime == 1){
+            document.write(i+"<br>");
+            num++;
+        }
+        i++;
+    }
+</script>
+</body>
+</html>

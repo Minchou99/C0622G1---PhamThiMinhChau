@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function draw(input){
+        for (let i = 0; i < 9; i++){
+            if (input[i] == 0){
+                document.write("&nbsp&nbsp");
+            }else{
+                document.write("#");
+            }
+        }
+        document.write("<br>")
+    }
+    draw("011000110");
+    draw("111101111");
+    draw("011111110");
+    draw("001111100");
+    draw("000111000");
+    draw("000010000");
+</script>
+
+</body>
+</html>

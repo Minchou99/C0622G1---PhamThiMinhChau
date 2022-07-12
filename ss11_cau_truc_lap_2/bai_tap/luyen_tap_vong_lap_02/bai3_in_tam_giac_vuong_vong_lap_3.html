@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3_in_tam_giac_vuong</title>
+</head>
+<body>
+<!--In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau -->
+<script>
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j <= i; j++) {
+            document.write("*");
+        }
+        document.write('<br>');
+    }
+    document.write('<br>');
+    for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
+            document.write("*");
+        }
+        document.write('<br>');
+    }
+    document.write('<br>');
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j >= 1; j--) {
+            if (j - i > 0) {
+                document.write('&ensp;');
+            } else {
+                document.write("*");
+            }
+        }
+        document.write("<br>");
+    }
+    document.write('<br>');
+    for (let i = 5; i >= 1; i--) {
+        for (let j = 5; j >= 1; j--) {
+            if (j - i > 0) {
+                document.write('&ensp;');
+            } else {
+                document.write("*");
+            }
+        }
+        document.write('<br>');
+    }
+    document.write('<br>');
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2_vong_lap_2</title>
+</head>
+<body>
+<!--Tính giai thừa của một số nguyên dương -->
+<script>
+    let number = +prompt("Nhập số ");
+    let mul = 1;
+        if (number >= 0) {
+            for (let i = 1; i <= number; i++) {
+                mul = mul * i;
+            } document.write("Giai thừa của " + number + ' là ' + mul);
+        } else {
+            document.write('Không tính được giá trị');
+        }
+
+</script>
+</body>
+</html>
