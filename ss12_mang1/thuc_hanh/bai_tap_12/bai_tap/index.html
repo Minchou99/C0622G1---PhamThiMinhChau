@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    // Viết vòng lặp in từ 1 -> 10.
+    for (let i = 1; i < 10; i++) {
+        document.write(i + "<br>");
+    }
+
+    // while
+    // let i = 1;
+    // while (i < 11) {
+    //     document.write(i + "<br>");
+    //     i++;
+    // }
+
+
+    // Cho người dùng nhập vào 1 số . Số lơn hơn 50 thì bắt nhập lại.
+    // Bé hơn 50 thì hiển thị ra OK.
+    let number = +prompt("nhập số"); //49
+    do{
+        number = +prompt("Nhập số"); // 51
+        alert("abc");
+    }while (number > 50);
+    alert("OK");
+
+    // Viết vòng lặp in từ 1 -> 10.Không in ra số 4.
+    // for (let i = 1; i < 11; i++) {
+    //
+    //     if(i === 4){
+    //         continue;
+    //     }
+    //     document.write(i + "<br>");
+    // }
+
+    // Viết vòng lặp in từ 1 -> 10.Nhưng tới 8 thì dừng không in nữa.
+    // for (let i = 1; i < 11; i++) {
+    //     document.write(i + "<br>");
+    //     if(i === 8){
+    //         break;
+    //     }
+    // }
+
+    // Vẽ hình chữ nhật với chiều cao và chiều rộng do người dùng nhập vào.
+
+    // let height = +prompt("Nhập chiều cao");
+    // let width = +prompt("Nhập chiều cao");
+
+    // for (let i = 0; i < height; i++) {
+    //     for (let j = 0; j < width; j++) {
+    //         document.write("*")
+    //     }
+    //     document.write("<br>")
+    // }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7_mang_01</title>
+</head>
+<body>
+<!--Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử,
+nhập/tạo phần tử số nguyên V. Chương trình kiểm tra xem V có thuộc mảng đã cho không,
+nếu V thuộc mảng đã cho xoá V khỏi mảng
+(Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V,
+và gán 0 cho phần tử cuối cùng của mảng) -->
+<script>
+    let array = [15, 18, 13, 3, 2, 1, 7, 4, 8, 9];
+    let soNguyen = parseInt(prompt('Input Number '));
+    let kiemTra = array.includes(soNguyen);
+    let viTri;
+    for (let i = 0; i < array.length; i++) {
+        if (kiemTra === true) {
+            viTri = array.indexOf(soNguyen);
+            array.splice(viTri, 1);
+            break;
+        }
+    }
+    document.write(array);
+</script>
+</body>
+</html>

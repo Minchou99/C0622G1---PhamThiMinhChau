@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5_mang_1</title>
+</head>
+<body>
+<!--Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi-->
+<script>
+    let array = new Array(10);
+    for (i = 0; i < 10; i++) {
+        array[i] = parseInt(prompt("Input Number " + (i + 1)));
+    }
+    let result = 0;
+    for (let j = 0; j < array.length; j++) {
+        if (array[j] < 0) {
+            result += 1;
+        }
+    }
+    document.write('Trong chuỗi có tất cả ' + result + ' số nguyên âm ');
+</script>
+</body>
+</html>

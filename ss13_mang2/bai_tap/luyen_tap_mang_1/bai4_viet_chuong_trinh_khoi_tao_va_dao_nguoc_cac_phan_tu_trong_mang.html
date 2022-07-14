@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4_mang_1</title>
+</head>
+<body>
+<!--Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên
+và đảo ngược các phần tử trong mảng đó. -->
+</body>
+<script>
+    // <!-- Dùng hàm có sẵn reverse để đảo ngược số   -->
+    //   let array=new Array(9);
+    //   for (let i = 0; i <9 ; i++) {
+    //       array[i]=parseInt(prompt("Nhập số " + (i+1)));
+    //   }
+    //   document.write(array + '<br>');
+    //   document.write(array.reverse());
+
+    //Không dùng hàm có sẵn
+    let array = new Array(9);
+    for (let i = 0; i < 9; i++) {
+        array[i] = parseInt(prompt("Input Number " + (i + 1)));
+    }
+    document.write(array + '<br>');
+    let first = 0;
+    let last = array.length - 1;
+    while (first < last) {
+        let b = array[first];
+        array[first] = array[last];
+        array[last] = b;
+        first++;
+        last--;
+    }
+    document.write(array);
+
+
+</script>
+</html>

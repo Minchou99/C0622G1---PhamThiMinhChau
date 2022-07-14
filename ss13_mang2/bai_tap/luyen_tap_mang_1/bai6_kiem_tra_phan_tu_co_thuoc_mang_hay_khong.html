@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6_mang1</title>
+</head>
+<body>
+<!--Bài 6- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử,
+nhập/tạo phần tử số nguyên V. Chương trình tìm xem V có nằm trong mảng số nguyên không?
+Nếu V thuộc mảng số nguyên thì in ra "V is in the array"
+còn lại in ra "V is not in the array". -->
+<script>
+    let array = new Array(10);
+    for (let i = 0; i < 10; i++) {
+        array[i] = parseInt(prompt("Input Number " + (i + 1)));
+    }
+    document.write(array + '<br>');
+    let result = "";
+    let soNguyuen = parseInt(prompt("Input number "));
+    for (let j = 0; j < array.length; j++) {
+        if (soNguyuen === array[j]) {
+            result = soNguyuen + ' Số nguyên này có trong mảng';
+            break;
+        } else {
+            result = soNguyuen + ' Số nguyên này không có trong mảng';
+        }
+    }
+    document.write(result);
+
+</script>
+</body>
+</html>

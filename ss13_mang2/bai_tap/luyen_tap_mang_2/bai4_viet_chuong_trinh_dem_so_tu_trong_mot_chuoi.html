@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4_mang_02</title>
+</head>
+<body>
+<!--Bài 4: Viết một chương trình để đếm số từ trong một chuỗi -->
+<script>
+    let array = ['t', 6, '3', 'r', 8, 'p', 'q', 'f', 'l'];
+    let soKiTu = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (isNaN(array[i])) {
+            soKiTu += 1;
+        }
+    }
+    document.write('Số kí tự là từ trong chuỗi là: ' + soKiTu);
+</script>
+</body>
+</html>

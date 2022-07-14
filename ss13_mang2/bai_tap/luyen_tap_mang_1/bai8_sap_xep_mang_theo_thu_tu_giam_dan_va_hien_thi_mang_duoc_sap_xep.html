@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai8_mang01</title>
+</head>
+<body>
+<!--Bài 8- Viết chương trình khởi tạo/nhập
+ vào một mảng số nguyên gồm 10 phần tử.
+Chương trình sắp xếp mảng theo thứ tự giảm dần
+và hiển thị ra mảng đã được sắp xếp. -->
+<script>
+    let array = [4, 3, 7, 9, 2, -3, 8, 19, 16, -7];
+    array.sort(function (a, b) {
+        if (b > a) {
+            return 1;
+        } else if (a > b) {
+            return -1;
+        } else {
+            return 0;
+        }
+    });
+    document.write(array);
+</script>
+
+
+</body>
+</html>

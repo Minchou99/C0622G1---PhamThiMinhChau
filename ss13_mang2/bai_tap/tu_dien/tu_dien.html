@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>từ điển</title>
+</head>
+<body>
+<p>Nhập từ: <input type="text" id="nhapvao"> <input type="button" value="Tra từ" onclick="clickme()"></p>
+<p id="result2"> </p>
+<script>
+    function clickme() {
+        let tiengViet = ["màu xanh", "màu đỏ", "màu cam", "màu tím", "màu hồng", "màu đen", "màu trắng"];
+        let tiengAnh = ['blue', 'red', 'orange', 'purple', 'pink', 'black', 'white'];
+        let nhapVao = document.getElementById("nhapvao").value;
+        let index = 0;
+        let result = '';
+        for (let i = 0; i < tiengViet.length; i++) {
+            if (tiengViet[i] === nhapVao) {
+                index = i;
+                for (let j = 0; j < tiengAnh.length; j++) {
+                    if (index === j) {
+                        result = tiengAnh[j];
+                    }
+                }
+            }
+        } document.getElementById("result2").innerHTML = result;
+        for (let i = 0; i < tiengAnh.length; i++) {
+            if (tiengAnh[i] === nhapVao) {
+                index = i;
+                for (let j = 0; j < tiengViet.length; j++) {
+                    if (index === j) {
+                        result = tiengViet[j];
+                    }
+                }
+            }
+        } document.getElementById("result2").innerHTML = result;
+    }
+</script>
+</body>
+</html>

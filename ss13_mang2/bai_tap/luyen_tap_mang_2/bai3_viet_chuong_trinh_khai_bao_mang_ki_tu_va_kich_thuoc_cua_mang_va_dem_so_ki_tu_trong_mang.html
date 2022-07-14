@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3_mang_02</title>
+</head>
+<body>
+<!--Bài 3: Viết một chương trình khai báo một mảng ký tự
+và kích thước của mảng.
+Chương trình này đếm số ký tự số trong mảng.  -->
+<script>
+    let array = [2, "4", 'd', 7, '9', 'k', 2, 'e', 'a', 9];
+    document.write('Kích thước của mảng là: ' + array.length + '<br>');
+    let kiTuSo = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (!isNaN(array[i])) {
+            kiTuSo += 1;
+        }
+    }
+    document.write('Số kí tự số trong mảng là: ' + kiTuSo);
+</script>
+</body>
+</html>
