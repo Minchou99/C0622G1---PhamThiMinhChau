@@ -10,9 +10,22 @@ theo thứ tự đảo ngược. Ví dụ, nếu một mảng chứa các ký t�
 [ 'c', 's', 'c', '2', '6', '1' ]
  sau khi thực hiện đảo ngược sẽ là "162csc" -->
 <script>
+    //Dùng hàm có sẵn
+    // let array = ['2', 'c', '6', 'g', 'a', 'd', '4', '9', 's'];
+    // let chuoiArray = array.reverse();
+    // document.write(chuoiArray.join(''));
+
     let array = ['2', 'c', '6', 'g', 'a', 'd', '4', '9', 's'];
-    let chuoiArray = array.reverse();
-    document.write(chuoiArray.join(''));
+    let first = 0;
+    let last = array.length - 1;
+    while (first < last) {
+        let b = array[first];
+        array[first] = array[last];
+        array[last] = b;
+        first++;
+        last--;
+    }
+    document.write(array.join(''));
 </script>
 </body>
 </html>
