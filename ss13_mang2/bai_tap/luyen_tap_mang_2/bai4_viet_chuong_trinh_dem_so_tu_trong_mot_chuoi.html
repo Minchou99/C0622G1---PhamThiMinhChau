@@ -7,10 +7,10 @@
 <body>
 <!--Bài 4: Viết một chương trình để đếm số từ trong một chuỗi -->
 <script>
-    let string = 'Hôm nay là một ngày nắng đẹp !';
-    let soKiTu = 0;
+    let string = 'Hôm nay   là một ngày nắng đẹp!';
+    let soKiTu = 1;
     for (let i = 0; i < string.length; i++) {
-        if (isNaN(string[i])) {
+        if (string[i-1]!==" " && string[i]===' ') {
             soKiTu += 1;
         }
     }
