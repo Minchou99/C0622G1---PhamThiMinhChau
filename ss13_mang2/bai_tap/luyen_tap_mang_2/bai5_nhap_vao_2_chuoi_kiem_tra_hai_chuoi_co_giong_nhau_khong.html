@@ -8,18 +8,22 @@
 <!--Bài 5: Viết một chương trình nhập vào 2 chuỗi,
 sau đó kiểm tra xem hai chuỗi có giống nhau hay không. -->
 <script>
-    let array1 = [2, 5, 8, 9, 'd', 'r', 's', 'h'];
-    let array2 = [1, 6, 8, 3, 'r', 'u', 'o', 'a'];
+    let string1 = 'Hà Nội hôm nay nắng lắm';
+    let string2 = 'Hà Nội hôm nay bình thường';
     let result;
-    for (let i = 0; i < array1.length; i++) {
-        if (array1[i] !== array2[i]) {
-            result = 'Hai chuỗi không giống nhau';
-            break;
-        } else {
-            result = 'Hai chuỗi giống nhau';
+    if (string1.length === string2.length) {
+        for (let i = 0; i < string1.length; i++) {
+            if (string1[i] !== string2[i]) {
+                result = 'Hai chuỗi không giống nhau';
+                break;
+            } else {
+                result = 'Hai chuỗi giống nhau';
+            }
         }
+        document.write(result);
+    } else {
+        document.write("Hai chuỗi không giống nhau");
     }
-    document.write(result);
     // //hoặc dùng hàm JSON.stringify()
     // let array1=[2,5,8,9,'d','r','s','h'];
     // let array2=[1,6,8,3,'r','u','o','a'];
