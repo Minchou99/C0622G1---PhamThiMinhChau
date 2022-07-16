@@ -6,5 +6,30 @@
 </head>
 <body>
 <!--Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được. -->
+<script>
+    //Dùng hàm đệ quy
+    // function checkNumber(number) {
+    //     if (number == 2) {
+    //         return 2;
+    //     }
+    //     return number * checkNumber(number - 1);
+    // }
+    //
+    // let nhapVao = +prompt("Nhập số");
+    // alert('Giai thừa của ' + nhapVao + ' là: ' + checkNumber(nhapVao));
+
+    function checkNumber(number) {
+        let result = 1;
+        if (number > 0) {
+            for (let i = number; i > 1; i--) {
+                result *= i;
+            }
+            return result;
+        }
+    }
+
+    let nhapVao = +prompt("Nhập vào");
+    alert('Giai thừa của ' + nhapVao + ' là: ' + checkNumber(nhapVao));
+</script>
 </body>
 </html>
