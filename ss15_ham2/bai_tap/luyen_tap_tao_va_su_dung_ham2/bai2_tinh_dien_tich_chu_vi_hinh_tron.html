@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2_tinh_dien_tich_chu_vi_hinh_tron</title>
+</head>
+<body>
+<!--Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được -->
+<script>
+    function calArea(number) {
+        return 3.14 * number * number;
+    }
+
+    function calCircuit(number) {
+        return number * 2 * 3.14;
+    }
+
+    let radius = +prompt("Nhập Bán kính hình tròn ");
+    alert('Diện tích hình tròn có bán kính ' + radius + ' là: ' + calArea(radius)
+         + ' Chu vi hình tròn có bán kính ' + radius + ' là: ' + calCircuit(radius));
+</script>
+</body>
+</html>

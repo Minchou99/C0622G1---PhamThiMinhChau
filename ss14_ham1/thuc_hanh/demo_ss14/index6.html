@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [5];
+
+    // function doSth(value) {
+    //     ++value;
+    //     document.write(value);
+    // }
+    // // Tham trị.
+    // doSth(number);//6
+    // document.write("<br>");
+    // document.write(number)//5
+
+
+    //Tham chiếu.
+    function doSth(value) {
+        ++value[0];
+        document.write(value);
+    }
+    doSth(number);
+    document.write("<br>");
+    document.write(number);
+</script>
+</body>
+</html>

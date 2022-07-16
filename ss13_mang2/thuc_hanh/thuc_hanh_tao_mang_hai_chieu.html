@@ -2,20 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>thực hành tạo mảng hai chiều</title>
+    <title>Title</title>
 </head>
 <body>
+
 <script>
-    let row = +prompt("Nhập chiều dài của mảng");
-    let col = +prompt("Nhập chiều dài của mảng con");
+    let row = +prompt("Input row");
+    let col = +prompt("Input col");
     let array = [];
     for (let i = 0; i < row; i++) {
         array[i] = [];
         for (let j = 0; j < col; j++) {
-            arr[i][j] = +prompt('Nhập số');
+            array[i][j] = +prompt("input number");
         }
-    } document.write(array);
+    }
 
+    for (let i = 0; i < array.length ; i++) {
+        for (let j = 0; j < array[i].length ; j++) {
+            document.write(array[i][j]+" ");
+        }
+        document.write("<br>");
+    }
 </script>
 </body>
 </html>

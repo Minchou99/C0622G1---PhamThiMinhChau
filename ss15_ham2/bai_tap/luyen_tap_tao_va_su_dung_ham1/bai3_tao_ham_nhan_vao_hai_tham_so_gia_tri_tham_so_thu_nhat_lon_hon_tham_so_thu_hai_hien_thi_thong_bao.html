@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3_luyen_tap_tao_va_su_dung_ham_1</title>
+</head>
+<body>
+<!--Bài 3: Tạo hàm nhận vào hai tham số.
+Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai,
+hiển thị hộp thoại thông báo cho người dùng.
+Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai,
+trả về tổng của hai tham số. -->
+
+<script>
+    function receiveNumber(number1, number2) {
+        if (number1 > number2) {
+            return number1 + ' lớn hơn ' + number2;
+        } else if (number1 <= number2) {
+            return number1 + number2;
+        }
+    }
+
+    let num1 = +prompt("Nhập số ");
+    let num2 = +prompt("Nhập số ");
+    alert(receiveNumber(num1, num2));
+</script>
+</body>
+</html>

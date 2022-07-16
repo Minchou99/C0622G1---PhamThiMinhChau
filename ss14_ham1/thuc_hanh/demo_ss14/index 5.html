@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let number = +prompt("input number");
+    // function checkNum(value) {
+    //     if(value > 5){
+    //         return value++;
+    //     }else {
+    //         return --value;
+    //     }
+    // }
+    // alert(checkNum(6));
+
+    function doSth(number) {
+        if(number === 2){
+            return 2
+        }
+        return number * doSth(number - 1);
+    }
+    document.write(doSth(5))
+    // lần 1 khi truyền 5 => number =5
+    // => 5 * dosth(4)
+    // Lần 2 => truyền 4 => number = 4
+    // => 5 * 4 * dosth(3)
+    // => 5 * 4 * 3 * 2 => 120
+
+</script>
+</body>
+</html>

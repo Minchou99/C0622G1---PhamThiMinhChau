@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9_ham_02</title>
+</head>
+<body>
+<!--Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, 
+kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. 
+Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.  -->
+<script>
+    function checkKeyWord() {
+        let lengthArray = +prompt("Độ dài mảng");
+        let array = [];
+        let result = 0;
+        for (let i = 0; i < lengthArray; i++) {
+            array = +prompt('Nhập kí tự');
+        }
+        let checkArray = +prompt("Nhập kí tự muốn kiểm tra");
+        for (let j = 0; j < array.length; j++) {
+            if (array[j] === checkArray) {
+                result += 1;
+                return result;
+            } else {
+                return -1;
+            }
+        }
+    }
+
+    alert(checkKeyWord());
+</script>
+</body>
+</html>
