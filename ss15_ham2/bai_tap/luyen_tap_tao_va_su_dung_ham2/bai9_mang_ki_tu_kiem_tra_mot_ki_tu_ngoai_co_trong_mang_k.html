@@ -9,25 +9,31 @@
 kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. 
 Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.  -->
 <script>
-    function checkKeyWord() {
-        let lengthArray = +prompt("Độ dài mảng");
-        let array = [];
+    function checkKeyWord(mang, check) {
         let result = 0;
-        for (let i = 0; i < lengthArray; i++) {
-            array = +prompt('Nhập kí tự');
-        }
-        let checkArray = +prompt("Nhập kí tự muốn kiểm tra");
-        for (let j = 0; j < array.length; j++) {
-            if (array[j] === checkArray) {
+        let kiemTraKiTu = true;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] === check) {
                 result += 1;
-                return result;
+                kiemTraKiTu = true;
             } else {
-                return -1;
+                kiemTraKiTu = false;
             }
+        }
+        if (kiemTraKiTu === true) {
+            return result;
+        } else {
+            return -1;
         }
     }
 
-    alert(checkKeyWord());
+    let nhapVao = prompt("Độ dài của mảng");
+    let array = [];
+    for (let i = 0; i < nhapVao; i++) {
+        array[i] = prompt("Nhập kí tự");
+    }
+    let checkWord = prompt("Nhập kí tự muốn kiểm tra");
+    alert(checkKeyWord(array, checkWord));
 </script>
 </body>
 </html>

@@ -6,5 +6,26 @@
 </head>
 <body>
 <!--Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó. -->
+<script>
+    function checkNumber(mang) {
+        let first = 0;
+        let last = mang.length - 1;
+        while (first < last) {
+            let a = mang[first];
+            mang[first] = mang[last];
+            mang[last] = a;
+            first++;
+            last--;
+        }
+        return mang;
+    }
+
+    let nhapVao = +prompt("Độ dài của mảng");
+    let array = [];
+    for (let i = 0; i < nhapVao; i++) {
+        array[i] = +prompt("Nhập kí tự");
+    }
+    alert(checkNumber(array));
+</script>
 </body>
 </html>

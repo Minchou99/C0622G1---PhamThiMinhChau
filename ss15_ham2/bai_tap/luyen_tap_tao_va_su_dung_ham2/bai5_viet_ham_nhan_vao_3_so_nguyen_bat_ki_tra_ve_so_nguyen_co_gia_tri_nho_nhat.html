@@ -6,5 +6,27 @@
 </head>
 <body>
 <!--Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất. -->
+<script>
+    function checkNumber(num1, num2, num3) {
+        if (num1 < num2) {
+            if (num1 < num3) {
+                return num1;
+            }
+        } else if (num2 < num1) {
+            if (num2 < num3) {
+                return num2;
+            }
+        } else if (num3 < num1) {
+            if (num3 < num2) {
+                return num3;
+            }
+        }
+    }
+
+    let nhapVao = +prompt("Nhập số thứ nhất");
+    let nhapVao1 = +prompt("Nhập số thứ hai");
+    let nhapVao2 = +prompt("Nhập số thứ ba");
+    alert('Số nguyên có giá trị nhỏ nhất là: ' + checkNumber(nhapVao, nhapVao1, nhapVao2));
+</script>
 </body>
 </html>

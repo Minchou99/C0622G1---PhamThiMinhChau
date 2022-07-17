@@ -7,6 +7,18 @@
 <body>
 <!--Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
 Nếu là nguyên dương trả về true, ngược lại trả về false. -->
+<script>
+    function checkNumber(number) {
+        if (!isNaN(number)) {
+            if (number > 0) {
+                return true;
+            }
+            return false;
+        }
+    }
 
+    let nhapVao = +prompt("Nhập vào");
+    alert(checkNumber(nhapVao));
+</script>
 </body>
 </html>

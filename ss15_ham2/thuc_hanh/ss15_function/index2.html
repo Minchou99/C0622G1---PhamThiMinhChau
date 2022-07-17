@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tạo 1 hàm truyền vào 1 tham số dạng số. xác định số đó có lơn hơn 5 hay không.
+    function checkNumber() { // tham số truyền vào
+        if (number > 5) {
+            document.write("Số này lớn hơn 5")
+        }
+    }
+
+    let number = +prompt("input number 1");
+    let number2 = +prompt("input number 2"); // 7
+
+    checkNumber(number);// Đối số.
+    document.write("<br>");
+    checkNumber(7, 4); // đối số.
+
+
+</script>
+</body>
+</html>
