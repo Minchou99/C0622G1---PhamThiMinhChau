@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung_dung_quan_li_san_pham</title>
+</head>
+<body>
+<h1>Add New Product</h1>
+<input type="text" id="nhapThongTin" placeholder='New Product'><input type="button" value="Add" onclick="sanPham">
+<h1>Display All Product</h1>
+<h3>Product Name</h3>
+<table id="hienthiketqua">
+
+</table>
+
+<script>
+    let customerList = [];
+    let nhapVao = document.getElementById('nhapThongTin').value;
+
+    function display() {
+        let hienThi = '<tr>';
+        for (let i = 0; i < customerList.length; i++) {
+            hienThi += '<td>' + customerList[i] + '</td>';
+        }
+        hienThi += '</tr>';
+    }
+    document.getElementById('hienthiketqua').innerHTML=display();
+
+
+</script>
+</body>
+</html>
