@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay_dung_lop_mo_ta_hinh_chu_nhat</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border: 1px solid#d32709; "></canvas>
+<br>
+<script>
+    class HCN {
+        constructor(a, b) {
+            this.a = a;
+            this.b = b;
+        }
+
+        tinhChuVi() {
+            return ((this.a + this.b) * 2);
+        }
+
+        tinhDienTich() {
+            return (this.a * this.b);
+        }
+
+        canvas() {
+            let c = document.getElementById('myCanvas');
+            let ctx = c.getContext('2d');
+            ctx.fillStyle = '#fa4b2a';
+            ctx.fillRect(0, 0, 200, 100);
+        }
+    }
+
+    let hcn = new HCN(200, 100);
+    document.write('Chiều dài hình chữ nhật là: ' + hcn.a + ' cm' + '<br>');
+    document.write('Chiều rộng hình chữ nhật là: ' + hcn.b + ' cm' + '<br>');
+    document.write('Diện tích hình chữ nhật là: ' + hcn.tinhDienTich() + ' cm2' + '<br>');
+    document.write('Chu vi hình chữ nhật là: ' + hcn.tinhChuVi() + ' cm' + '<br>');
+    hcn.canvas();
+</script>
+</body>
+</html>
