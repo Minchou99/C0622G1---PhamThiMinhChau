@@ -7,21 +7,21 @@
 <body>
 <!--hiển thị 20 số nguyên tố đầu tiên. -->
 <script>
-    let isPrime = 0;
+    let isPrime = true;
     let num = 1;
-    let i = 2;
-    while(num <= 20){
-        isPrime = 1;
-        for (let j = 2; j < i; j++) {
-            if ((i % j == 0) && i != 2){
-                isPrime = 0;
+    let n = 2;
+    while (num <= 20) {
+        isPrime = false;
+        for (let j = 2; j < n; j++) {
+            if ((n % j == 0) && n != 2) {
+                isPrime = true;
             }
         }
-        if (isPrime == 1){
-            document.write(i+"<br>");
+        if (isPrime == false) {
+            document.write(n + "<br>");
             num++;
         }
-        i++;
+        n++;
     }
 </script>
 </body>

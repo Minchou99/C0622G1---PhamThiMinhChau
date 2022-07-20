@@ -12,15 +12,14 @@ Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz". -->
     for (let i = 1; i <= 100; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
             document.write("FizzBuzz" + '<br>');
-            continue;
         } else if (i % 3 === 0) {
             document.write("Fizz" + '<br>');
-            continue;
         } else if (i % 5 === 0) {
             document.write("Buzz" +'<br>');
-            continue;
+        }else {
+            document.write(i + '<br>');
         }
-        document.write(i + '<br>');
+
     }
 </script>
 </body>

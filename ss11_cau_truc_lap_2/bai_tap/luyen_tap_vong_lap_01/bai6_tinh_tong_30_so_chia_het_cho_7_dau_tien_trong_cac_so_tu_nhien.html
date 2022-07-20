@@ -7,11 +7,21 @@
 <body>
 <!--Bài 6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên. -->
 <script>
-    let n;
+   // let sum=0;
+   // let n;
+   //  for (let i = 0; i < 30; i++) {
+   //      n = 7 * i;
+   //      sum += n;
+   //  }
+    let num = 1;
+    let n = 0;
     let sum = 0;
-    for (let i = 0; i < 30; i++) {
-        n = 7 * i;
-        sum += n;
+    while (num <= 30) {
+        if (n % 7 === 0) {
+            sum += n;
+            num++;
+        }
+        n++;
     }
     document.write("Tổng cần tìm là: " + sum + '<br>');
 </script>
