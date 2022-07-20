@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cong_tac_bong_den</title>
+</head>
+<body>
+<script>
+    class ElectricLamp {
+        constructor() {
+            this.status = false;
+        }
+
+        turnOff() {
+            this.status = false;
+        }
+
+        turnOn() {
+            this.status = true;
+        }
+    }
+
+    class SwitchButton {
+        constructor() {
+            this.status = false;
+            this.lamp = null;
+        }
+
+        connectToLamp(bongDen) {
+            this.lamp = bongDen;
+        }
+
+        switchOff() {
+            this.status = false;
+            this.lamp.turnOff();
+        }
+
+        switchOn() {
+            this.status = true;
+            this.lamp.turnOn();
+        }
+    }
+
+    let bongDenDien = new ElectricLamp();
+    let congTacDien = new SwitchButton();
+    congTacDien.connectToLamp(bongDenDien);
+    for (let i = 0; i < 10; i++) {
+        congTacDien.switchOn()
+        document.write("Bóng đèn đang bật " + i + '<br>')
+        congTacDien.switchOff()
+        document.write("Bóng đèn đang tắt " + i + '<br>')
+    }
+</script>
+</body>
+</html>
