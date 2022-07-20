@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1_yeu_cau_2</title>
+</head>
+<body>
+<!--Bài 1: Viết một chương trình để nhập lương nhân viên,
+tính thuế thu nhập và lương ròng (số tiền lương thực sự mà nhân viên đó nhận được).
+Với các thông số giả sử như sau (không theo luật lương, chỉ là con số giả sử để dễ tính toán):
+20% thuế thu nhập nếu lương là 15 triệu.
+10% thuế thu nhập nếu lương từ 7 đến 15 triệu.
+5% thuế thu nhập nếu lương dưới 7 triệu
+ -->
+<script>
+    let salary = +prompt("Nhập tiền lương");
+    if (!isNaN(salary)) {
+        if (salary >= 15000000) {
+            alert('Thuế thu nhập là: ' + salary * 0.02 + 'VNĐ' + ' Lương ròng là: ' + (salary - (salary * 0.02)) + 'VNĐ');
+        } else if (salary < 15000000 && salary > 7000000) {
+            alert('Thuế thu nhập là: ' + salary * 0.01 + 'VNĐ' + ' Lương ròng là: ' + (salary - (salary * 0.01)) + 'VNĐ');
+        } else if (salary < 7000000) {
+            alert('Thuế thu nhập là: ' + salary * 0.005 + 'VNĐ' + ' Lương ròng là: ' + (salary - (salary * 0.005)) + 'VNĐ');
+        }
+    } else {
+        alert("Không tính toán được");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2_yeu_cau_2</title>
+</head>
+<body>
+<!--Viết chương trình kiểm tra một ký tự trong bảng chữ cái tiếng anh là nguyên âm hay phụ âm.
+Ký tự là bất kỳ được nhập từ bàn phím.
+Các ký tự nguyên âm bao gồm: 'o', 'u', 'i', 'a', 'e' hoặc 'O', 'U', 'I', 'A', 'E' -->
+<script>
+    let arr = ['o', 'u', 'i', 'a', 'e', 'O', 'U', 'I', 'A', 'E'];
+
+    function checkKiTu(kiTu) {
+        for (let i = 0; i < arr.length; i++) {
+            if (kiTu === arr[i]) {
+                return 'Kí tự nhập vào là nguyên âm ';
+            }
+            return "Kí tự nhập vào là phụ âm";
+        }
+    }
+
+    let check = prompt("Nhập kí tự muốn kiểm tra");
+    alert(checkKiTu(check));
+</script>
+</body>
+</html>
