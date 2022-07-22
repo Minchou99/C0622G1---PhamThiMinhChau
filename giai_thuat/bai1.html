@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Cho một mảng số nguyên.
+Hãy kiểm tra xem tần số xuất hiện của tất cả các số nguyên trong mảng có bằng nhau không?
+Nếu có return true, k thì false.-->
+<script>
+    arr = [2, 5, 3, 4, 3, 2, 5, 4];
+    document.write( solution(arr));​
+    function solution(arr) {
+        let array = [];
+        let count = [];​
+        for (let i = 0; i < arr.length; i++) {
+            if (!array.includes(arr[i])) {
+                array.push( arr[i]);
+                count.push(1);
+            }
+            for (let j = 0; j < array.length; j++) {
+                if (array[j] === array[i]) {
+                    count[j] += 1;
+                }
+            }​
+        }
+        let tmp = count[0];
+        for (let i = 0; i < count.length; i++) {
+            if (count[i] !== tmp) {
+                return false;
+            }​
+        }
+        return true;
+    }
+
+</script>
+</body>
+</html>
