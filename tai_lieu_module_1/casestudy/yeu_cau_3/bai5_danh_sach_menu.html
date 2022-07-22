@@ -37,7 +37,7 @@ Sử dụng vòng lặp do while lặp lại cho người dùng đặt thức u�
             break;
         }
         soLuong = +prompt(arr[goiMon - 1] + " có giá là: " + donGia[goiMon - 1]);
-        tongTien += (soLuong * donGia[soLuong - 1]);
+        tongTien += (soLuong * donGia[goiMon - 1]);
     } while (goiMon !== 7);
     document.write('Tổng tiền cần thanh toán là: ' + tongTien);
 </script>
