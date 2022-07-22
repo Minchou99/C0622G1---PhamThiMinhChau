@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<!--Giả sử menu của chúng ta có các loại thức uống như sau:
+Cafe
+Cam vắt
+Nước ép cà rốt
+Nước ép cà chua
+Nước lọc
+Nước dừa
+Viết một chương trình gọi thức uống đơn giản.
+Gợi ý: Trước tiên in ra màn hinh danh sách các loại thức uống cho người dùng chọn lựa
+Đánh dấu theo thứ tự 1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát gọi món)
+Khi người dùng lựa chọn 1 trong số các thức uống, chương trình sẽ hiện đơn giá của thức uống đó và cho phép người dùng
+nhập số lượng.Cuối cùng hiển thị tổng số tiền người dùng cần phải trả.
+Sử dụng vòng lặp do while lặp lại cho người dùng đặt thức uống, kết thúc quá trình đặt thức uống khi người nhấn số 7
+-->
+<script>
+    let arr = ['cafe', 'cam vắt', 'nước ép cà rốt', 'nước ép cà chua', 'nước lọc', 'nước dừa', 'thoát gọi món'];
+    let donGia = [12000, 20000, 25000, 25000, 10000, 30000];
+    let tongTien = 0;
+    let goiMon;
+    let soLuong;
+    do {
+        goiMon = +prompt("Gọi món: 1(cafe)\n " +
+            "2(cam vắt)\n " +
+            "3(nước ép cà rốt)\n " +
+            "4(nước ép cà chua)\n " +
+            "5(nước lọc)\n " +
+            "6(nước dừa)\n " +
+            "7(Thoát gọi món)");
+        if (goiMon === 7) {
+            break;
+        }
+        soLuong = +prompt(arr[goiMon - 1] + " có giá là: " + donGia[goiMon - 1]);
+        tongTien += (soLuong * donGia[soLuong - 1]);
+    } while (goiMon !== 7);
+    document.write('Tổng tiền cần thanh toán là: ' + tongTien);
+</script>
+</body>
+</html>

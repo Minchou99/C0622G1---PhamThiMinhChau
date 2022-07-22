@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<!--Viết một chương trình nhập một số từ bàn phím và in ra màn hình bằng chữ.
+Ví dụ 1234, kết quả in ra màn hình là một hai ba bốn.-->
+</body>
+<script>
+    function checkNumber(number) {
+        let arr = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín'];
+        let arr3 = [];
+        let string = '';
+        for (let i = 0; i < number.length; i++) {
+            arr3.push(number[i]);
+        }
+        for (let i = 0; i < arr3.length; i++) {
+                string += arr[+arr3[i]] + ' ';
+        }
+        document.write(string);
+    }
+
+    let number = prompt("Nhập số");
+    checkNumber(number);
+</script>
+</html>
