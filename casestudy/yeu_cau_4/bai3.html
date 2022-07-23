@@ -10,7 +10,50 @@ Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s
 ⇨	2 xâu s1 và s2 có 3 kí tự chung: 2 kí tự 'a' và 1 kí tự 'c'.
 -->
 <script>
+    function checkKiTu(str1, str2) {
+        let arr1 = str1.split('');
+        let arr2 = str2.split('');
+        let arr3 = [];
+        let result = '';
+        let count = 0;
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = 0; j < arr2.length; j++) {
+                if (arr1[i] == arr2[j] && !arr3.includes(arr1[i])) {
+                    arr3.push(arr1[i]);
+                }
+            }
+        }
+        result += 'Kí tự giống nhau là: ' + arr3 + '<br>';
+        let arr4 = [];
+        for (let i = 0; i < arr3.length; i++) {
+            let array1 = [];
+            let array2 = [];
+            for (let j = 0; j < arr1.length; j++) {
+                if (arr3[i] == arr1[j]) {
+                    array1.push(arr1[j]);
+                }
+            }
+            for (let j = 0; j < arr2.length; j++) {
+                if (arr3[i] == arr2[j]) {
+                    array2.push(arr2[j]);
+                }
+            }
+            if (array1.length > array2.length) {
+                arr4.push(array2.length);
+            } else {
+                arr4.push(array1.length);
+            }
+        }
+        for (let i = 0; i < arr4.length; i++) {
+            count += arr4[i];
+        }
+        result += 'Số kí tự chung của 2 sâu là: ' + count;
+        return result;
+    }
 
+    let string1 = 'abegcabcabcd';
+    let string2 = 'abcdeabceead';
+    document.write(checkKiTu(string1, string2));
 </script>
 </body>
 </html>
