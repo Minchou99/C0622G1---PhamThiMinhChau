@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quản lí sản phẩm theo hướng đối tượng</title>
+</head>
+<body>
+<script>
+    class Product {
+        constructor(id, name) {
+            this.id = id;
+            this.name = name;
+        }
+
+        setId(id) {
+            this.id = id;
+        }
+
+        getId(id) {
+            return this.id;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getName(name) {
+            return this.name;
+        }
+    }
+
+    let data = [];
+
+    function init() {
+        for (let i = 0; i < 10; i++) {
+            data.push(new Product(i, "Samsung"));
+        }
+        return data;
+    }
+
+    function addProduct() {
+        let id = prompt('Nhập id');
+        let name = prompt("Nhập tên");
+        data.push(new Product(id, name));
+        return data;
+    }
+
+    function editProductById() {
+        let id = +prompt('id edit');
+        for (let pro of data) {
+            if (pro.getId() === id) {
+                pro.setName(pro.setName(prompt('New name')));
+            }
+        }
+    }
+
+    function deleteProductById() {
+        let id = +prompt('id edit');
+        for (let pro in data) {
+            if (data[pro].getId() === id) {
+                data.splice(data[pro], 1);
+            }
+        }
+        return data;
+    }
+
+    document.write(init());
+    document.write(addProduct());
+    document.write(editProductById());
+    document.write(deleteProductById());
+</script>
+</body>
+</html>

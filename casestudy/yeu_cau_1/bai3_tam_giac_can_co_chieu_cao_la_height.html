@@ -7,16 +7,20 @@
 <body>
 <!--Vẽ tam giác cân đặc có chiều cao h-->
 <script>
-    let height=parseInt(prompt('Nhập chiều cao tam giác cân'));
-    for(let i=1; i<=height*2;i += 2){
-        for (let j = 0; j < (height*2-i); j++) {
-            document.write("&nbsp");
+    let height = parseInt(prompt('Nhập chiều cao tam giác cân'));
+    let m = height;
+    let n = height;
+    for (let i = 0; i < height; i++) {
+        for (let j = 1; j < 2 * height; j++) {
+            if (j >= m && j <= n) {
+                document.write('*');
+            } else {
+                document.write('&nbsp&nbsp');
+            }
         }
-        for (let j = 0; j < i; j++) {
-            document.write("*");
-        }
-        document.write("<br>");
-    }
+        m--;
+        n++;
+        document.write('<br>')
 </script>
 </body>
 </html>

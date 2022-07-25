@@ -18,7 +18,7 @@ Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s
         let count = 0;
         for (let i = 0; i < arr1.length; i++) {
             for (let j = 0; j < arr2.length; j++) {
-                if (arr1[i] == arr2[j] && !arr3.includes(arr1[i])) {
+                if (arr1[i] === arr2[j] && !arr3.includes(arr1[i])) {
                     arr3.push(arr1[i]);
                 }
             }
@@ -29,12 +29,12 @@ Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s
             let array1 = [];
             let array2 = [];
             for (let j = 0; j < arr1.length; j++) {
-                if (arr3[i] == arr1[j]) {
+                if (arr3[i] === arr1[j]) {
                     array1.push(arr1[j]);
                 }
             }
             for (let j = 0; j < arr2.length; j++) {
-                if (arr3[i] == arr2[j]) {
+                if (arr3[i] === arr2[j]) {
                     array2.push(arr2[j]);
                 }
             }
@@ -47,7 +47,7 @@ Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s
         for (let i = 0; i < arr4.length; i++) {
             count += arr4[i];
         }
-        result += 'Số kí tự chung của 2 sâu là: ' + count;
+        result += 'Số kí tự chung của 2 xâu là: ' + count;
         return result;
     }
 
