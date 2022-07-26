@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+<!--Bài 1: Nhập từ bàn phím mảng số nguyên gồm n phần tử (n<=50). Hiển thị ra màn hình danh sách các phần tử của mảng,
+Hiện thị giá trị = tổng các số ở vị trí chẵn – tổng các số ở vị trí lẻ
+Ví dụ: [15,2,3,5,10,15,7]. Kết quả sau khi thực hiện là: (15+3+10+7)-(2+5+15) = ?
+ -->
+<script>
+    let doDai = +prompt('Nhập độ dài mảng');
+    let arr = [];
+    while (doDai > 50) {
+        doDai = +prompt('Nhập lại độ dài mảng');
+    }
+    for (let i = 0; i < doDai; i++) {
+        arr[i] = +prompt('Nhập phần tử thứ ' + (i + 1) + ' của mảng');
+    }
+    document.write(arr + '<br>');
+
+    let tongChan = 0;
+    let tongLe = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (i % 2 === 0) {
+            tongChan += arr[i];
+        } else {
+            tongLe += arr[i];
+        }
+    }
+    document.write('Giá trị cần tìm của bài toán là: ' + (tongChan - tongLe));
+
+</script>
+</body>
+</html>

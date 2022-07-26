@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+<!--2. Viết 1 hàm nhận vào 1 mảng các số nguyên. Đếm số lần xuất hiện của các phần tử trong mảng đó. Ví dụ:
+ [ 1,2,3,3,2,4] => 1 : 1 lần , 2 : 2 lần, 3: 2 lần, 4: 1 lần.
+ -->
+</body>
+<script>
+    function checkNumber(arr) {
+        let arr1 = [];
+        let result = '';
+        for (let i = 0; i < arr.length; i++) {
+            let count = 1;
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[i] === arr[j]) {
+                    count++;
+                    arr.splice(j, 1);
+                    j--;
+                }
+            }
+            arr1.push(count);
+        }
+        for (let i = 0; i < arr1.length; i++) {
+            result += arr[i] + ' xuất hiện ' + arr1[i] + ' lần' + '<br>';
+        }
+        return result;
+    }
+
+    let array = [2, 6, 8, 2, 3, 4, 3, 2, 5, 5, 5, 5, 9];
+    document.write(checkNumber(array));
+</script>
+</html>

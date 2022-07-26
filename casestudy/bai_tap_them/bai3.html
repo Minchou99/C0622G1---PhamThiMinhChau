@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<!--Bài 3: Viết hàm có tham số truyền vào là một mảng ,tìm các số fibonaci có trong mảng(số này đã làm bài tập ở jame).
+ Hàm trả về 1 mảng số fibonaci được tìm thấy trong mảng ( Yêu cầu sắp xếp tăng dần).
+   Gợi ý đây là dãy số fibonaci: 0,1,1,2,3,5,8,13,21,…..
+Ví dụ :
+Số đầu vào	Kết quả
+[1,5,6,13,9,12,8,0,5,1]	[0,1,1,5,5,8,13]
+ -->
+</body>
+<script>
+    function checkNumber(arr) {
+        let result = '';
+        let max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        let num1 = 0;
+        let num2 = 1;
+        let sum;
+        let array = [];
+        if (num1 <= max) {
+            for (let i = 0; i < max; i++) {
+                array.push(num1);
+                sum = num1 + num2;
+                num1 = num2;
+                num2 = sum;
+            }
+        }
+        let array1 = [];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < array.length; j++) {
+                if (arr[i] === array[j]) {
+                    array1.push(arr[i]);
+                    break;
+                }
+            }
+        }
+        array1.sort(function (a, b) {
+            return a - b
+        });
+        result += array1;
+        return result;
+    }
+
+    let inputArray = [1, 5, 6, 13, 9, 12, 8, 0, 5, 1];
+    document.write(checkNumber(inputArray));
+</script>
+</html>

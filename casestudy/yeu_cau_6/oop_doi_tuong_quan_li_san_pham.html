@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sản phẩm OOP</title>
+</head>
+<body>
+<h2> Add New Product</h2>
+<input type="text" placeholder="Product Name" id="newProduct">
+<input type="text" placeholder="Product Color" id="color">
+<input type="text" placeholder="Product Price" id="price">
+<input type="button" onclick="add()" value="Add">
+<p id="quantity"></p>
+<h2> Display All Product</h2>
+<h3> Product Details </h3>
+<p id="display"></p>
+<script>
+    class Product {
+        constructor(name, color, productPrice) {
+            this.name = name;
+            this.color = color;
+            this.productPice = productPrice;
+        }
+
+        setName(newName) {
+            this.name = newName;
+        }
+
+    ​
+
+        setColor(newColor) {
+            this.color = newColor;
+        }
+
+    ​
+
+        setProductPrice(newPrice) {
+            this.productPice = newPrice;
+        }
+    }
+
+    let productName = [];
+    display();
+
+    function display() {
+        let tableString = '<table border="1">';
+        tableString += '<th style="width:150px">' + 'Product Name' + '</th>'
+        tableString += '<th style="width:150px">' + 'Product Color' + '</th>'
+        tableString += '<th style="width:150px">' + 'Product Price' + '</th>'​
+        for (let i = 0; i < productName.length; i++) {
+            tableString += '<tr>';
+            tableString += '<td style="width:150px">' + productName[i].name + '</td>'
+            tableString += '<td style="width:150px">' + productName[i].color + '</td>'
+            tableString += '<td style="width:150px">' + productName[i].productPice + '</td>'
+            tableString += '<td style="width: 70px">' + '<input type="button" style="width: 100%" value="edit" onclick="editItem(' + i + ')" ' + '</td>'
+            tableString += '<td style="width: 70px">' + '<input type="button" style="width: 100%" value="delete" onclick="deleteItem(' + i + ')" ' + '</td>'
+            tableString += '</tr>';
+        }
+        tableString += '</table>';
+        document.getElementById('display').innerHTML = tableString;
+        document.getElementById('quantity').innerHTML = 'Total products: ' + productName.length;
+    }
+
+    function add() {
+        let newProduct = document.getElementById('newProduct').value;
+        let productColor = document.getElementById('color').value;
+        let productPrice = document.getElementById('price').value;
+        let anotherProduct = new Product(newProduct, productColor, productPrice);
+        if (newProduct === '' || productColor === '' || productPrice === '') {
+            alert('Please adding again')
+            return;
+        } else {
+            productName.push(anotherProduct);
+            display();
+        }
+    }   ​
+    function editItem(index) {
+        alert('\n 1. Edit name \n 2. Edit color \n 3. Edit price ');
+        numberInput = +prompt('Press number to continue editing: ');
+        if (numberInput === 1) {
+            let newName = prompt('Enter new name: ');
+            productName[index].setName(newName);
+        }
+        if (numberInput === 2) {
+            let newColor = prompt('Enter new color: ');
+            productName[index].setColor(newColor);
+        }
+        if (numberInput === 3) {
+            let newPrice = prompt('Enter new price: ');
+            productName[index].setProductPrice(newPrice);
+        }
+        display();
+    }
+
+    function deleteItem(index) {
+        let confirmMessage = confirm('You want to delete ' + ' ' + productName[index].name + '?');
+        if (confirmMessage) {
+            productName.splice(index, 1);
+            display();
+        } else {
+            return;
+        }
+    }
+</script>
+</body>
+</html>

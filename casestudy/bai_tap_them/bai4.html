@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<!--Câu 4: Tạo một lớp Máy tính  có:
+- Thuộc tính:
++ Mã máy (string)
++ Tên máy(string)
++ Tên Hãng sản xuất (string)
++ Giá bán (number).
+- Các phương thức getter và setter cho các thuộc tính
+- Phương thức  toString() : phương thức lấy các thông tin của đối tượng.
+-Yêu cầu: Viết chương trình quản lý  Máy tính    với các chức năng sau;
++ Thêm mới 1 máy tính
++ Hiển thị được danh sách máy tính
+-->
+<h1>Danh sách hiển thị máy tính</h1>
+<p id="hienThi"></p>
+<button onclick="edit()">Sửa</button>
+<button onclick="themMoi()">Thêm mới</button>
+</body>
+<script>
+    class MayTinh {
+        constructor(maMay, tenMay, tenHang, giaBan) {
+            this.maMay = maMay;
+            this.tenMay = tenMay;
+            this.tenHang = tenHang;
+            this.giaBan = giaBan;
+        }
+
+        setMaMay(maMayMoi) {
+            this.maMay = maMayMoi;
+        }
+
+        setTenMay(tenMayMoi) {
+            this.tenMay = tenMayMoi;
+        }
+
+        setTenHang(tenHangMoi) {
+            this.tenHang = tenHangMoi;
+        }
+
+        setGiaBan(giaBanMoi) {
+            this.giaBan = giaBanMoi;
+        }
+
+        getMaMay() {
+            return this.maMay;
+        }
+
+        getTenMay() {
+            return this.tenMay;
+        }
+
+        getTenHang() {
+            return this.tenHang;
+        }
+
+        getGiaBan() {
+            return this.giaBan;
+        }
+    }
+
+    let mayTinh1 = new MayTinh('a1230', 'Dell', 'Microsoft', 12000000);
+    let mayTinh2 = new MayTinh('a1231', 'Dell', 'Microsoft', 12500000);
+    let mayTinh3 = new MayTinh('a1232', 'Accer', 'Microsoft', 15000000);
+    let mayTinh4 = new MayTinh('a1234', 'Aplle', 'IOS', 19000000);
+    let danhSachMayTinh = [mayTinh1, mayTinh2, mayTinh3, mayTinh4];
+
+    function display(mayTinh) {
+        let tableString = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>MÃ Máy</th>\n' +
+            '        <th>TÊN MÁY</th>\n' +
+            '        <th>TÊN HÃNG SẢN XUẤT</th>\n' +
+            '        <th>GIÁ BÁN</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < mayTinh.length; i++) {
+            tableString += '<tr>\n' +
+                '        <td>' + (i + 1) + '</td>\n' +
+                '        <td>' + mayTinh[i].getMaMay() + '</td>\n' +
+                '        <td>' + mayTinh[i].getTenMay() + '</td>\n' +
+                '        <td>' + mayTinh[i].getTenHang() + '</td>\n' +
+                '        <td>' + mayTinh[i].getGiaBan() + '</td>\n' +
+                '    </tr>';
+        }
+        tableString += '</table>';
+        document.getElementById('hienThi').innerHTML = tableString;
+    }
+
+    display(danhSachMayTinh);
+
+    function themMoi() {
+        let maMoi = prompt("Nhập biển số mới");
+        let tenMoi = prompt("Nhập biển số mới");
+        let tenHangMoi = prompt('Nhập chủ sở hữu mới');
+        let giaMoi = prompt('Nhập hãng mới');
+        danhSachMayTinh.push(new MayTinh(maMoi, tenMoi, tenHangMoi, giaMoi));
+        display(danhSachMayTinh);
+    }
+
+    function edit() {
+        let viTri = +prompt("Vị trí bạn muốn sửa");
+        danhSachMayTinh[viTri - 1].setMaMay(prompt('Mã máy mới '));
+        danhSachMayTinh[viTri - 1].setTenMay(prompt('Tên máy mới '));
+        danhSachMayTinh[viTri - 1].setTenHang(prompt('Tên hãng sản xuất mới '));
+        danhSachMayTinh[viTri - 1].setGiaBan(prompt('Giá bán mới '));
+        display(danhSachMayTinh);
+    }
+</script>
+</html>

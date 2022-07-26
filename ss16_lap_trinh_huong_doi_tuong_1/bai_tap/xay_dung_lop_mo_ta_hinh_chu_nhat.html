@@ -8,7 +8,7 @@
 <canvas id="myCanvas" width="200" height="100" style="border: 1px solid#d32709; "></canvas>
 <br>
 <script>
-    class HCN {
+    class HinhChuNhat {
         constructor(a, b) {
             this.a = a;
             this.b = b;
@@ -30,12 +30,12 @@
         }
     }
 
-    let hcn = new HCN(200, 100);
-    document.write('Chiều dài hình chữ nhật là: ' + hcn.a + ' cm' + '<br>');
-    document.write('Chiều rộng hình chữ nhật là: ' + hcn.b + ' cm' + '<br>');
-    document.write('Diện tích hình chữ nhật là: ' + hcn.tinhDienTich() + ' cm2' + '<br>');
-    document.write('Chu vi hình chữ nhật là: ' + hcn.tinhChuVi() + ' cm' + '<br>');
-    hcn.canvas();
+    let hinhChuNhat = new HinhChuNhat(200, 100);
+    document.write('Chiều dài hình chữ nhật là: ' + hinhChuNhat.a + ' cm' + '<br>');
+    document.write('Chiều rộng hình chữ nhật là: ' + hinhChuNhat.b + ' cm' + '<br>');
+    document.write('Diện tích hình chữ nhật là: ' + hinhChuNhat.tinhDienTich() + ' cm2' + '<br>');
+    document.write('Chu vi hình chữ nhật là: ' + hinhChuNhat.tinhChuVi() + ' cm' + '<br>');
+    hinhChuNhat.canvas();
 </script>
 </body>
 </html>

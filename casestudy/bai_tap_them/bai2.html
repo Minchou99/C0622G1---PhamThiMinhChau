@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+<!--Bài 2: Viết hàm có tham số truyền vào là một chuỗi các ký tự.Hàm thực hiện đếm số lượng ký tự in Hoa và số ký tự in thường
+    Ví dụ:   HellOCodeym => kết quả trả về : [3,8]=> 3: ký tự in hoa, 8 ký tự thường
+           Nếu là chuỗi rỗng “” => thì trả về một mảng [0,0]
+
+Lưu ý : không tính ký tự khoảng trắng cách;
+-->
+</body>
+<script>
+    function kiemTraChuoi(chuoiKiTu) {
+        let arr = chuoiKiTu.trim();
+        arr = arr.split('');
+        let count1 = 0;
+        let count2 = 0;
+        let arr1 = [];
+        let result = '';
+        if (arr === null) {
+            arr1[0] = 0;
+            arr1[1] = 0;
+        } else {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === ' ') {
+                    continue;
+                } else if (arr[i] === arr[i].toUpperCase()) {
+                    count1++;
+                } else {
+                    count2++;
+                }
+            }
+            arr1.push(count1);
+            arr1.push(count2);
+        }
+        result += arr1[0] + ' kí tự in hoa và ' + arr1[1] + ' kí tự in thường';
+        return result;
+    }
+
+    let string = '   Troi homnay XAUUU laM  ';
+    document.write(kiemTraChuoi(string));
+</script>
+</html>

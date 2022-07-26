@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+<!--Viết 1 hàm nhận vào 1 số nguyên bất kì.
+Hiển thị các số KHÔNG phải số nguyên tố từ 0 đến số đấy.-->
+<script>
+    function isPrime(num) {
+        let arr = [];
+        for (let i = 0; i < num; i++) {
+            if (i % 2 === 0 && i !== 2 || i === 1) {
+                arr.push(i);
+            }
+        }
+        return arr;
+    }
+
+    let number = +prompt("Nhập số");
+    document.write(isPrime(number));
+</script>
+</body>
+</html>

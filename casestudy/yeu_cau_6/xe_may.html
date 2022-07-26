@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quản lí xe máy</title>
+</head>
+<body>
+<h1>Danh sách hiển thị thông tin xe</h1>
+<p id="hienThi"></p>
+<button onclick="edit()">Sửa</button>
+<button onclick="themMoi()">Thêm mới</button>
+<button onclick="xoa()">Xóa</button>
+</body>
+<script>
+    class XeMay {
+        constructor(bienKiemSoat, chuSoHuu, hangXe) {
+            this.bienKiemSoat = bienKiemSoat;
+            this.chuSoHuu = chuSoHuu;
+            this.hangXe = hangXe;
+        }
+
+        setBienKiemSoat(kiemSoat) {
+            this.bienKiemSoat = kiemSoat;
+        }
+
+        setChuSoHuu(soHuu) {
+            this.chuSoHuu = soHuu;
+        }
+
+        setHangXe(hangXe) {
+            this.hangXe = hangXe;
+        }
+
+        getBienKiemSoat() {
+            return this.bienKiemSoat;
+        }
+
+        getChuSoHuu() {
+            return this.chuSoHuu;
+        }
+
+        getHangXe() {
+            return this.hangXe;
+        }
+    }
+
+    let xe1 = new XeMay('43C1', 'MinChou', 'Vision');
+    let xe2 = new XeMay('43C2', 'MinChou1', 'Honda');
+    let xe3 = new XeMay('43C3', 'Minchouu', 'Suzuki');
+    let danhSach = [xe1, xe2, xe3];
+
+    function display(danhSachXe) {
+        let tableString = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>BKS</th>\n' +
+            '        <th>Chủ sỡ hữu</th>\n' +
+            '        <th>Hãng xe</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < danhSachXe.length; i++) {
+            tableString += '<tr>\n' +
+                '        <td>' + (i + 1) + '</td>\n' +
+                '        <td>' + danhSachXe[i].getBienKiemSoat() + '</td>\n' +
+                '        <td>' + danhSachXe[i].getChuSoHuu() + '</td>\n' +
+                '        <td>' + danhSachXe[i].getHangXe() + '</td>\n' +
+                '    </tr>';
+        }
+        tableString += '</table>';
+        document.getElementById('hienThi').innerHTML = tableString;
+    }
+
+    display(danhSach);
+
+    function themMoi() {
+        let bienMoi = prompt("Nhập biển số mới");
+        let chuMoi = prompt('Nhập chủ sở hữu mới');
+        let hangMoi = prompt('Nhập hãng mới');
+        danhSach.push(new XeMay(bienMoi, chuMoi, hangMoi));
+        display(danhSach);
+    }
+
+    function edit() {
+        let viTri = +prompt("Vị trí bạn muốn sửa");
+        danhSach[viTri - 1].setBienKiemSoat(prompt('Biển kiểm soát mới '));
+        danhSach[viTri - 1].setChuSoHuu(prompt('Chủ sở hữu mới '));
+        danhSach[viTri - 1].setHangXe(prompt('Hãng xe mới '));
+        display(danhSach);
+    }
+
+    function xoa() {
+        let viTriXoa = +prompt('Vị trí bạn muốn xóa');
+        confirm('Bạn chắc chưa?');
+        if (confirm()) {
+            danhSach.splice((viTriXoa - 1), 1);
+        }
+        display(danhSach);
+    }
+</script>
+</html>

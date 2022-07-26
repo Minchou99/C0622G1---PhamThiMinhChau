@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+<!--2.	Nhập vào tháng, năm bất kỳ. In ra số ngày tương ứng với tháng, năm đó. -->
+</body>
+<script>
+    let nhapThang = +prompt('Nhập tháng');
+    let array = [1, 3, 5, 7, 8, 10, 11];
+    let array1 = [4, 6, 9, 12];
+    for (let i = 0; i < array.length; i++) {
+        if (nhapThang === array[i]) {
+            document.write('Tháng' + nhapThang + ' có 31 ngày' + '<br>')
+        }
+    }
+    for (let i = 0; i < array1.length; i++) {
+        if (nhapThang === array1[i]) {
+            document.write('Tháng' + nhapThang + ' có 30 ngày' + '<br>');
+        }
+    }
+    if (nhapThang === 2) {
+        document.write('Tháng 2 có 28 ngày' + '<br>');
+    }
+    let nhapNam = +prompt('Nhập năm');
+    if (nhapNam % 4 === 0 && nhapNam % 100 !== 0) {
+        document.write(nhapNam + ' là năm nhuận' + ', có 366 ngày');
+    } else if (nhapNam % 400 === 0) {
+        document.write(nhapNam + ' là năm nhuận' + ', có 366 ngày');
+    } else {
+        document.write(nhapNam + ' không phải là năm nhuận, có 365 ngày ');
+    }
+</script>
+</html>

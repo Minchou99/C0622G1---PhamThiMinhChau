@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 4</title>
+</head>
+<body>
+<!--viết hàm có tham số truyền vào là một chuỗi các kí tự. Hàm thực hiện tạo ra 1 cụm từ viết tắt
+Nếu chuỗi có từ hai từ trở lên thì từ viết tắt sẽ lấy các chữ cái đầu tiên và viết hoa.
+Nếu chuỗi có 1 từ thì thông báo k cần viết tắt-->
+</body>
+<script>
+    // let str='Pham    Thi Minh Chau';
+    // // str=str.split();
+    // // document.write(str);//Pham Thi Minh Chau nguyên chuỗi
+    // // str=str.split('');
+    // // document.write(str);//P,h,a,m, , , , ,T,h,i, ,M,i,n,h, ,C,h,a,u
+    // // str=str.split(' ');
+    // // document.write(str);//Pham,,,,Thi,Minh,Chau
+    // str=str.split(',');
+    // document.write(str);//Pham Thi Minh Chau
+    // //Pham , Minh Chau
+    // // str=str.split('Thi');
+    // // document.write(str);
+    // let str='  pham thi   minh  chau';
+    // str=str.split('');// , ,p,h,a,m, ,t,h,i, , , ,m,i,n,h, , ,c,h,a,u
+    function checkString(str) {
+        let count = 0;
+        let arr=[];
+        str = str.split('');
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === ' ') {
+                if (str[i + 1] === ' ') {
+                    str.splice(i, 1);
+                    i--;
+                }
+            }
+        }
+
+        for (let i = 0; i <str.length ; i++) {
+            if(str[i]===' '){
+                arr.push(str[i+1]);
+            }
+        }
+        arr=arr.join('');
+        arr=arr.toUpperCase();
+        return arr;
+    }
+
+    let string = ' Pham thi Minh   Chau';
+    document.write(checkString(string));
+
+</script>
+</html>
