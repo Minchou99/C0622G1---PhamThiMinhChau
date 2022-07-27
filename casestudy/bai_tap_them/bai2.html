@@ -19,25 +19,17 @@ Lưu ý : không tính ký tự khoảng trắng cách;
         let count1 = 0;
         let count2 = 0;
         let arr1 = [];
-        let result = '';
-        if (arr === null) {
-            arr1[0] = 0;
-            arr1[1] = 0;
-        } else {
-            for (let i = 0; i < arr.length; i++) {
-                if (arr[i] === ' ') {
-                    continue;
-                } else if (arr[i] === arr[i].toUpperCase()) {
-                    count1++;
-                } else {
-                    count2++;
-                }
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === arr[i].toUpperCase() && arr[i] !== ' ') {
+                count1++;
+            } else if (arr[i] === arr[i].toLowerCase() && arr[i] !== ' ') {
+                count2++;
+            } else {
+                arr1 = [0, 0];
             }
-            arr1.push(count1);
-            arr1.push(count2);
         }
-        result += arr1[0] + ' kí tự in hoa và ' + arr1[1] + ' kí tự in thường';
-        return result;
+        arr1 = [count1, count2];
+        return arr1;
     }
 
     let string = '   Troi homnay XAUUU laM  ';

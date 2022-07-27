@@ -65,12 +65,21 @@
     }
 
     let mayTinh1 = new MayTinh('a1230', 'Dell', 'Microsoft', 12000000);
-    let mayTinh2 = new MayTinh('a1231', 'Dell', 'Microsoft', 12500000);
+    let mayTinh2 = new MayTinh('a1231', 'Dell', 'Microsoft', 17500000);
     let mayTinh3 = new MayTinh('a1232', 'Accer', 'Microsoft', 15000000);
     let mayTinh4 = new MayTinh('a1234', 'Aplle', 'IOS', 19000000);
     let danhSachMayTinh = [mayTinh1, mayTinh2, mayTinh3, mayTinh4];
 
     function display(mayTinh) {
+        danhSachMayTinh.sort(function sort(a, b) {
+            if (a.giaBan > b.giaBan) {
+                return 1;
+            } else if (a.giaBan < b.giaBan) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
         let tableString = '<table border="1">\n' +
             '    <tr>\n' +
             '        <th>STT</th>\n' +
@@ -95,14 +104,13 @@
     display(danhSachMayTinh);
 
     function themMoi() {
-        let maMoi = prompt("Nhập biển số mới");
-        let tenMoi = prompt("Nhập biển số mới");
-        let tenHangMoi = prompt('Nhập chủ sở hữu mới');
-        let giaMoi = prompt('Nhập hãng mới');
+        let maMoi = prompt("Nhập mã mới");
+        let tenMoi = prompt("Nhập tên máy mới");
+        let tenHangMoi = prompt('Nhập tên hãng mới');
+        let giaMoi = prompt('Nhập giá mới mới');
         danhSachMayTinh.push(new MayTinh(maMoi, tenMoi, tenHangMoi, giaMoi));
         display(danhSachMayTinh);
     }
-
     function edit() {
         let viTri = +prompt("Vị trí bạn muốn sửa");
         danhSachMayTinh[viTri - 1].setMaMay(prompt('Mã máy mới '));
@@ -111,5 +119,7 @@
         danhSachMayTinh[viTri - 1].setGiaBan(prompt('Giá bán mới '));
         display(danhSachMayTinh);
     }
+
+
 </script>
 </html>
